@@ -1,7 +1,7 @@
 on:
   schedule: 
-    # runs the workflow every day at 23:57 UTC:
-    - cron: "57 23 * * *"
+    # runs every 5th minute past the 1, 2, 3, 4, 5, 6, 9, 12, 13, 14, 15, 18 and 21st hour UTC:
+    - cron: "05 1,2,3,4,5,6,9,12,13,14,15,18,21 * * *"
     
 jobs:
   # This workflow contains a single job called "traffic"
